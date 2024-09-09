@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid Project</title>
+    <!-- ------google fonts---------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- ------google fonts---------------- -->
+
+    <!-- ------fonts awesome---------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------fonts awesome---------------- -->
+     <link rel="stylesheet" href="../src/css/slick.css">
+     <link rel="stylesheet" href="../src/css/slick-theme.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body class="bg-[#0C0C0C] max-w-[1920px] mx-auto overflow-x-hidden relative">
+    <img src="../image/body-line1.png" alt="" class="absolute right-0 top-[1110px] z-[-100]">
+    <img src="../image/body-line2.png" alt="" class="absolute right-[1361px] top-[1201px] z-[-100]">
+<!-- ==================nav start===================================== -->
+    <nav class="w-full py-8 px-[120px] fixed left-0 top-0 bg-[#0C0C0C] z-50">
+            <div class="nav-container flex items-center justify-center mx-auto">
+                <div class="logo mr-[437px]">
+                    <a href="#" class="block"><img class="block" src="../image/logo.png" alt="logo"></a>
+                </div>
+                <!-- ---------logo end--------- -->
+    
+                <div class="menu mr-[271px]">
+                    <ul class="flex items-center gap-x-6">
+                        <li class="relative group px-2 bg-[#0C0C0C] border border-[#0C0C0C] hover:bg-[#3b3b3b] duration-700 transition-opacity">
+                            <a href="#" class="text-white text-base font-open-sans leading-[175%] tracking-[.6px] relative after:absolute after:w-full after:h-[2px] bg-[#]">Home</a>
+                            <div class="absolute w-[50%] h-[70%] left-[-8%] bottom-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <div class="absolute w-[50%] h-[70%] right-[-8%] top-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                        </li>
+                        <li class="relative group px-2 bg-[#0C0C0C] border border-[#0C0C0C] hover:bg-[#3b3b3b] duration-700 transition-opacity">
+                            <a href="team.html" class="text-white text-base font-open-sans leading-[175%] tracking-[.6px] relative after:absolute after:w-full after:h-[2px] bg-[#]">Pages</a>
+                            <div class="absolute w-[50%] h-[70%] left-[-8%] bottom-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <div class="absolute w-[50%] h-[70%] right-[-8%] top-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <ul class="flex-col bg-[#3b3b3b] absolute left-0 top-[33px] w-[150px] h-auto opacity-0 hidden group-hover:flex group-hover:opacity-100 duration-300 transition-opacity">
+                                <li><a href="#" class="inline-block border-b border-[#aaaaaa] py-[10px] px-[20px] text-nowrap text-white text-base font-open-sans leading-[175%] tracking-[.6px] font-bold hover:bg-[#DCCA87] duration-300 transition-all w-full hover:text-[#0C0C0C]">About</a></li>
+                                <li><a href="#" class="inline-block border-b border-[#aaaaaa] py-[10px] px-[20px] text-nowrap text-white text-base font-open-sans leading-[175%] tracking-[.6px] font-bold hover:bg-[#DCCA87] duration-300 transition-all w-full hover:text-[#0C0C0C]">Service</a></li>
+                                <li><a href="#" class="inline-block border-b border-[#aaaaaa] py-[10px] px-[20px] text-nowrap text-white text-base font-open-sans leading-[175%] tracking-[.6px] font-bold hover:bg-[#DCCA87] duration-300 transition-all w-full hover:text-[#0C0C0C]">Team</a></li>
+                                <li><a href="#" class="inline-block border-b border-[#aaaaaa] py-[10px] px-[20px] text-nowrap text-white text-base font-open-sans leading-[175%] tracking-[.6px] font-bold hover:bg-[#DCCA87] duration-300 transition-all w-full hover:text-[#0C0C0C]">FAQ</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="relative group px-2 bg-[#0C0C0C] border border-[#0C0C0C] hover:bg-[#3b3b3b] duration-700 transition-opacity">
+                            <a href="#" class="text-white text-base font-open-sans leading-[175%] tracking-[.6px] relative after:absolute after:w-full after:h-[2px] bg-[#] text-nowrap">Contact Us</a>
+                            <div class="absolute w-[50%] h-[70%] left-[-6%] bottom-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <div class="absolute w-[50%] h-[70%] right-[-6%] top-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                        </li>
+                        <li class="relative group px-2 bg-[#0C0C0C] border border-[#0C0C0C] hover:bg-[#3b3b3b] duration-700 transition-opacity">
+                            <a href="#" class="text-white text-base font-open-sans leading-[175%] tracking-[.6px] relative after:absolute after:w-full after:h-[2px] bg-[#]">Blog</a>
+                            <div class="absolute w-[50%] h-[70%] left-[-8%] bottom-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <div class="absolute w-[50%] h-[70%] right-[-8%] top-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <ul class="flex-col bg-[#3b3b3b] absolute left-0 top-[33px] w-[150px] h-auto opacity-0 hidden group-hover:flex group-hover:opacity-100 duration-300 transition-opacity">
+                                <li><a href="#" class="inline-block border-b border-[#aaaaaa] py-[10px] px-[20px] text-nowrap text-white text-base font-open-sans leading-[175%] tracking-[.6px] font-bold hover:bg-[#DCCA87] duration-300 transition-all w-full hover:text-[#0C0C0C]">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative group px-2 bg-[#0C0C0C] border border-[#0C0C0C] hover:bg-[#3b3b3b] duration-700 transition-opacity">
+                            <a href="#" class="text-white text-base font-open-sans leading-[175%] tracking-[.6px] relative after:absolute after:w-full after:h-[2px] bg-[#]">Landing</a>
+                            <div class="absolute w-[50%] h-[70%] left-[-8%] bottom-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <div class="absolute w-[50%] h-[70%] right-[-8%] top-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <ul class="flex-col bg-[#3b3b3b] absolute left-0 top-[33px] w-[150px] h-auto opacity-0 hidden group-hover:flex group-hover:opacity-100 duration-300 transition-opacity">
+                                <li><a href="#" class="inline-block border-b border-[#aaaaaa] py-[10px] px-[20px] text-nowrap text-white text-base font-open-sans leading-[175%] tracking-[.6px] font-bold hover:bg-[#DCCA87] duration-300 transition-all w-full hover:text-[#0C0C0C]">Coming Soon</a></li>
+                                <li><a href="#" class="inline-block border-b border-[#aaaaaa] py-[10px] px-[20px] text-nowrap text-white text-base font-open-sans leading-[175%] tracking-[.6px] font-bold hover:bg-[#DCCA87] duration-300 transition-all w-full hover:text-[#0C0C0C]">Error</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------menu end--------- -->
+                <div class="nav-btn">
+                    <ul class="flex items-center justify-center gap-x-[50px]">
+                        <li class="relative group px-2 bg-[#0C0C0C] border border-[#0C0C0C] hover:bg-[#3b3b3b] duration-700 transition-opacity">
+                            <a href="#" class="text-white text-base font-open-sans leading-[175%] tracking-[.6px] relative after:absolute after:w-full after:h-[2px] bg-[#] text-nowrap capitalize">Log in / registration</a>
+                            <div class="absolute w-[50%] h-[70%] left-[-3%] bottom-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <div class="absolute w-[50%] h-[70%] right-[-3%] top-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                        </li>
+                        <li>
+                            <img src="../image/nav-Vector.png" alt="">
+                        </li>
+                        <li class="relative group px-2 bg-[#0C0C0C] border border-[#0C0C0C] hover:bg-[#3b3b3b] duration-700 transition-opacity">
+                            <a href="#book_table" class="text-white text-base font-open-sans leading-[175%] tracking-[.6px] relative after:absolute after:w-full after:h-[2px] bg-[#] text-nowrap capitalize">book table</a>
+                            <div class="absolute w-[50%] h-[70%] left-[-6%] bottom-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                            <div class="absolute w-[50%] h-[70%] right-[-6%] top-[-14%] bg-[#DCCA87] z-[-1] opacity-0 group-hover:opacity-100 duration-700 transition-opacity"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ---------login & book-table end--------- -->
+    </nav>
+<!-- ==================nav start===================================== -->
+<main>
+<!-- ==================banner-section start======================= -->
+    <section id="banner_part" class=" mt-[169px] max-w-[1680px] flex items-center flex-col gap-y-[88px]">
+        <div class="banner-upper_part flex items-center">
+             <!-- ------------------banner-span----------- -->
+            <div class="span-div flex flex-col mr-[218px]">
+                <span class="texto text-white font-open-sans text-base leading-[175%] tracking-[.6px] mb-10">#Gericht</span>
+                <span class="texto text-white font-open-sans text-base leading-[175%] tracking-[.6px]">#Bar</span>
+            </div>
+            <!-- ------------------banner-span----------- -->
+
+            <!-- ------------------banner-text----------- -->
+            <div class="banner-text">
+                <h4 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Chase the new Flavour</h4>
+                <img src="../image/banner-Vector.png" alt="" class="mb-2">
+                <h2 class="max-w-[453px] text-[#DCCA87] font-bold font-cormorant capitalize text-[90px] leading-[130%] tracking-[.6px] mb-8">The key to Fine dining</h2>
+                <p class="max-w-[453px] text-[#AAAAAA] text-base font-normal font-open-sans leading-[175%] tracking-[.6px] mb-8">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+                <button class="px-8 py-2 bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">Explore Menu</button>
+            </div>
+            <!-- ------------------banner-text----------- -->
+
+            <!-- ------------------banner-img----------- -->
+            <div class="banner-img ml-[204px] relative z-[1] w-[619px] h-[688px] after:absolute after:content:[''] after:left-[-24px] after:bottom-[-24px] after:w-[435px] after:h-[435px] after:bg-[#DCCA87] after:z-[-1] before:absolute before:content:[''] before:right-[-24px] before:top-[-24px] before:w-[435px] before:h-[435px] before:bg-[#DCCA87] before:z-[-1]">
+                <div class="slider">
+                    <img class="block" src="../image/banner-img.png" alt="">
+                    <img class="block" src="../image/banner-img2.jpg" alt="">
+                    <img class="block" src="../image/banner-img3.jpg" alt="">
+                </div>
+            </div>
+            <!-- ------------------banner-img----------- -->
+        </div>
+
+        <div class="banner-bottom_part  mb-[64px] flex gap-x-[771px]">
+            <div class="ml-[1052px] 2nd-part flex items-center justify-center">
+                <span class="text-white font-cormorant font-semibold text-base leading-[175%] tracking-[.6px]">01</span>
+                <img class="block mx-2 mt-1" src="../image/banner bottom Line1.png" alt="">
+                <span class="text-white font-cormorant font-semibold text-base leading-[175%] tracking-[.6px] mr-2">02</span>
+                <span class="text-white font-cormorant font-semibold text-base leading-[175%] tracking-[.6px] mr-2">03</span>
+                <span class="text-white font-cormorant font-semibold text-base leading-[175%] tracking-[.6px] mr-2">04</span>
+            </div>
+            <div class="1st-part relative">
+                <div class="text-[#DCCA87] font-bold uppercase text-base leading-[175%] tracking-[.6px]">Scroll</div>
+                <img class="absolute right-[30px] top-[-85px]" src="../image/scroll Vector.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ==================banner-section end===================================== -->
+    
+    <!-- ==================about_history-part start===================================== -->
+    <section id="about_history-part" class="mt-[152px] px-[310px] py-[128px] w-full bg-no-repeat bg-center flex items-center justify-center gap-x-[85px] z-[1] relative bg-[url('/image/footer-bg.png')] bg-no-repeat bg-center bg-cover after:absolute after:contents[''] after:w-[100%] after:h-[100%] after:left-0 after:top-0 after:bg-[#0c0c0c9a] after:z-[-10]" >
+        <!-- -------------------about-us start---------- -->
+        <img src="../image/G.png" class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[-1]">
+        <div id="about-us">
+            <h2 class="text-[#DCCA87] text-right font-semibold font-cormorant text-[64px] leading-[130%] tracking-[.6px] mb-2">About Us</h2>
+            <img class="float-right block" src="../image/left-spoon.png" alt="">
+            <p class="mt-8 w-[523px] text-right text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px] mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+            <button class="py-2 px-8 float-end bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">Know More</button>
+        </div>
+        <!-- -------------------about-us end---------- -->
+
+        <!-- -------------------about-history-img start---------- -->
+        <img src="../image/knives.png" alt="">
+        <!-- -------------------about-history-img end---------- -->
+
+        <!-- -------------------history start---------- -->
+        <div id="history">
+            <h2 class="text-[#DCCA87] text-start font-semibold font-cormorant text-[64px] leading-[130%] tracking-[.6px] mb-2">Our History</h2>
+            <img class="float-left block" src="../image/right-spoon.png" alt="">
+            <p class="mt-8 w-[523px] text-start text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px] mb-8">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+            <button class="py-2 px-8 float-start bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">Know More</button>
+        </div>
+        <!-- -------------------history end---------- -->
+    </section>
+    <!-- ==================about_history-part end====================== -->
+
+    <!-- ==================book table-part start====================== -->
+     <section id="book_table" class="max-w-[1364px] my-[152px] mx-auto flex flex-col gap-y-2 items-center justify-center py-12 px-8 relative  bg-[#0C0C0C] border border-[rgba(220,202,135,0.12)]">
+        <img class="absolute right-[-127px] top-[-176px] z-[1]" src="../image/round spoon logo.png" alt="">
+        <h5 class="text-white font-bold text-[23px] font-cormorant leading-[130%] tracking-[.6px]">Reservations</h5>
+        <img src="../image/right-spoon.png" alt="">
+        <h2 class="text-[#DCCA87] font-semibold font-cormorant text-[64px] leading-[130%] tracking-[.6px]">Book A Table</h2>
+
+        <!-- -------------form---- -->
+        <div id="formField" class="flex items-center gap-x-8 w-full ">
+        <!-- -----------person------- -->
+            <div id="personField" class=" w-full relative">
+                <div id="personSelectField" class="p-4 flex justify-between items-center border border-[#F5EFDB]">
+                    <h6 id="personSelect" class="text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px]">1 Person</h6>
+                    <img id="pSelectImg" src="../image/arrow.png" alt="">
+                </div>
+            <div id="pList" class="hide bg-[#0C0B08] absolute w-full top-20 left-0 options border border-[#F5EFDB] shadow-lg shadow-slate-700 transition-all">
+                <h6 class="personOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700  w-full">1 Person</h6>
+                <h6 class="personOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700  w-full">2 Person</h6>
+                <h6 class="personOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700  w-full">3 Person</h6>
+                <h6 class="personOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700  w-full">4 Person</h6>
+                <h6 class="personOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700  w-full">5 Person</h6>
+                <h6 class="personOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700  w-full">6 Person</h6>
+            </div>
+            </div>
+    <!-- -----------person------- -->
+    <!-- -----------date------- -->
+            <div id="dateField" class=" w-full relative">
+                <div id="dateSelectField" class="p-4 flex justify-between items-center border border-[#F5EFDB]">
+                    <h6 id="dateSelect" class="text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px]">12/05/2021</h6>
+                    <img id="dSelectImg" src="../image/arrow.png" alt="">
+                </div>
+
+                <div id="dList" class="hide bg-[#0C0B08] absolute w-full top-20 left-0 options border border-[#F5EFDB] shadow-lg shadow-slate-700">
+                    <h6 class="dateOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">12/05/2021</h6>
+                    <h6 class="dateOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">13/05/2021</h6>
+                    <h6 class="dateOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">14/05/2021</h6>
+                    <h6 class="dateOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">15/05/2021</h6>
+                    <h6 class="dateOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">16/05/2021</h6>
+                    <h6 class="dateOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">17/05/2021</h6>
+                </div>
+            </div>
+    <!-- -----------date------- -->
+    <!-- -----------time------- -->
+            <div id="timeField" class=" w-full relative">
+                <div id="timeSelectField" class="p-4 flex justify-between items-center border border-[#F5EFDB]">
+                    <h6 id="timeSelect" class="text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px]">11:00 AM</h6>
+                    <img id="tSelectImg" src="../image/arrow.png" alt="">
+                </div>
+
+                <div id="tList" class="hide bg-[#0C0B08] absolute w-full top-20 left-0 options border border-[#F5EFDB] shadow-lg shadow-slate-700">
+                    <h6 class="timeOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">11:00 AM</h6>
+                    <h6 class="timeOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">12:00 AM</h6>
+                    <h6 class="timeOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">1:00 AM</h6>
+                    <h6 class="timeOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">2:00 AM</h6>
+                    <h6 class="timeOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">3:00 AM</h6>
+                    <h6 class="timeOptions px-4 py-1 text-[#AAAAAA] font-cormorant font-semibold leading-[175%] tracking-[.6px] hover:bg-slate-700 duration-200 transition-all w-full">4:00 AM</h6>
+                </div>
+            </div>    
+    <!-- -----------time------- -->
+        </div>
+<!-- -------------form---- -->
+        <button class="mt-16 py-2 px-8 bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">Book Now</button>
+     </section>
+    <!-- ==================book table -part end====================== -->
+
+    <!-- ==================bar/food/desert menu-part start====================== -->
+    <section id="menu-part" class="mt-[231px] relative h-[900px] after:absolute after:contents:[''] after:w-[100%] after:h-[100%] after:bg-[rgba(12,12,12,0.43)] after:left-0 after:top-0">
+        <div class="round-logo relative">
+            <img class="absolute left-[145px] top-[-32px] z-[2] animate-spin-slow" src="../image/round spoon logo.png" alt="">
+        </div>
+        <div class="menu-list-slider absolute left-[145px] bottom-[50%] translate-y-[50%] z-[1]">
+            <div>
+                <ul class="flex gap-y-16 flex-col">
+                    <li>
+                        <a class="underline font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#bar-menu">Bar Menu</a>
+                    </li>
+                    <li>
+                        <a class="font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#food-menu">Food Menu</a>
+                    </li>
+                    <li>
+                        <a class="font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#desert-menu">Desserts Menu</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div>
+                <ul class="flex flex-col gap-y-16">
+                    <li>
+                        <a class="font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#bar-menu">Bar Menu</a>
+                    </li>
+                    <li>
+                        <a class="underline font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#food-menu">Food Menu</a>
+                    </li>
+                    <li>
+                        <a class="font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#desert-menu">Desserts Menu</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex flex-col gap-y-16">
+                    <li>
+                        <a class="font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#bar-menu">Bar Menu</a>
+                    </li>
+                    <li>
+                        <a class="font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#food-menu">Food Menu</a>
+                    </li>
+                    <li>
+                        <a class="underline font-cormorant font-semibold text-[64px] text-white leading-[130%] tracking-[.5px]" href="#desert-menu">Desserts Menu</a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="menu-slider">
+            <div class="img-1">
+                <img src="../image/bar menu.png" alt="">
+            </div>
+            <div class="img-2">
+                <img src="../image/food menu.png" alt="">
+            </div>
+            <div class="img-3">
+                <img src="../image/desert menu.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ==================bar/food/desert menu-part  end============ -->
+    
+    <!-- ==================today's special-part start================ -->
+    <section id="todays-special" class="mt-[152px] flex flex-col items-center justify-center max-w-[1300px] mx-auto">
+        <h4 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Menu that fits you palatte</h4>
+        <img src="../image/banner-Vector.png" alt="" class="mb-2">
+        <h2 class="text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[130%] tracking-[.6px] mb-16">Today’s Special</h2>
+        <!-- --------------special menu--------- -->
+         <div class="special-menu flex gap-x-8">
+            <!-- ----------left-- -->
+            <div class="left-menu">
+                <h3 class="text-white text-[45px] font-cormorant font-semibold leading-[130%] tracking-[.6px] mb-12 text-center">Wine & Beer</h3>
+                <div class="menu-list flex flex-col gap-y-10 items-start">
+                    <div class="menu1 float-start">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Chapel Hill Shiraz</h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$56</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">AU | Bottle</p>
+                        </div>
+                    </div>
+
+                    <div class="menu2">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Catena Malbec</h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$59</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">AR | Bottle</p>
+                        </div>
+                    </div>
+
+                    <div class="menu3">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">La Vieille Rosé</h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$44</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">FR | 750 ml</p>
+                        </div>
+                    </div>
+
+                    <div class="menu4">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Rhino Pale Ale</h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$31</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">CA | 750 ml</p>
+                        </div>
+                    </div>
+
+                    <div class="menu5">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Irish Guinness
+                            </h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$26</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">IE | 750 ml</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- ----------left-- -->
+            <img src="../image/special-img.png" alt="">
+             <!-- ----------right-- -->
+             <div class="right-menu">
+                <h3 class="text-white text-[45px] font-cormorant font-semibold leading-[130%] tracking-[.6px] mb-12 text-center">Cocktails</h3>
+                <div class="menu-list flex flex-col gap-y-10 items-start">
+                    <div class="menu1">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Aperol Spritz
+                            </h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$20</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">Gin | Sweet Vermouth | Campari | Orange garnish</p>
+                        </div>
+                    </div>
+
+                    <div class="menu2">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Dark 'N' Stormy
+                            </h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$16</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">Bourbon | Brown sugar | Angostura Bitters</p>
+                        </div>
+                    </div>
+
+                    <div class="menu3">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Daiquiri
+                            </h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$10</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">Rum | Citrus juice | Sugar</p>
+                        </div>
+                    </div>
+
+                    <div class="menu4">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Old Fashioned
+                            </h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$31</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">Bourbon | Brown sugar | Angostura Bitters</p>
+                        </div>
+                    </div>
+
+                    <div class="menu5">
+                        <div class="menu-name flex items-center justify-center gap-x-8">
+                            <h5 class="text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize w-48 text-nowrap">Negroni
+                            </h5>
+                            <img src="../image/special line.png" alt="">
+                            <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px]">$26</h5>
+                        </div>
+                        <div class="mt-2">
+                            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">Gin | Sweet Vermouth | Campari | Orange garnish</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+             <!-- ----------right-- -->
+
+         </div>
+        <!-- --------------special menu--------- -->
+        <button class="mt-16 py-2 px-8 float-end bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">Book Now</button>
+    </section>
+    <!-- ==================today's special-part end====================== -->
+    
+    <!-- ==================chef-part start====================== -->
+    <section id="chef_part" class=" mt-[152px] mx-auto flex items-center px-[310px] py-32 z-[1] relative bg-[url('/image/footer-bg.png')] bg-no-repeat bg-center bg-cover after:absolute after:contents[''] after:w-[100%] after:h-[100%] after:left-0 after:top-0 after:bg-[#0c0c0c9a] after:z-[-1]">
+                    <!-- ------------------chef-img----------- -->
+        <div class="chef-img ml-6 relative z-[1] w-[586px] h-[741px] after:absolute after:content:[''] after:left-[-24px] after:bottom-[-24px] after:w-[435px] after:h-[435px] after:bg-[#DCCA87] after:z-[-1] before:absolute before:content:[''] before:right-[-24px] before:top-[-24px] before:w-[435px] before:h-[435px] before:bg-[#DCCA87] before:z-[-1]">
+            <div class="chef-slider">
+                <img class="block" src="../image/chef1.png" alt="">
+                <img class="block" src="../image/chef2.png" alt="">
+                <img class="block" src="../image/chef3.png" alt="">
+                <img class="block" src="../image/chef4.png" alt="">
+                <img class="block" src="../image/chef5.png" alt="">
+                <img class="block" src="../image/chef6.png" alt="">
+            </div>
+        </div>
+                <!-- ------------------chef-img----------- -->
+            
+                <!-- ------------------chef-text----------- -->
+        <div class="chef-text-slider ml-[120px]">
+            <div class="chef1">
+                <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Chef’s Word</h5>
+                <img src="../image/right-spoon.png" alt="" class="mb-2">
+                <h2 class="max-w-[523px] text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[175%] tracking-[.5px] mb-8">What we believe in</h2>
+                <img class="inline-flex mb-[-36px]" src="../image/quotation.png" alt="">
+                <p class="max-w-[570px] first-letter:ml-[57px] text-[#AAAAAA] text-base font-open-sans italic leading-[175%] tracking-[.6px] mb-8">  Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+                <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-2">Kevin Luo</h4>
+                <p class="font-open-sans text-base text-[#AAAAAA] mb-8">Chef & Founder</p>
+                <img src="../image/signature.png" alt="">
+            </div>
+            <!-- <div class="chef2">
+                <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Chef’s Word</h5>
+                <img src="../image/right-spoon.png" alt="" class="mb-2">
+                <h2 class="max-w-[523px] text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[175%] tracking-[.5px] mb-8">What we believe in</h2>
+                <img class="inline-flex" src="../image/quotation.png" alt="">
+                <p class="max-w-[570px] text-[#AAAAAA] text-base font-open-sans italic leading-[175%] tracking-[.6px] mb-8">  Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+                <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-2">Patrick Choi</h4>
+                <p class="font-open-sans text-base text-[#AAAAAA] mb-8">Deputy Chef</p>
+                <img src="../image/signature.png" alt="">
+            </div>
+            <div class="chef3">
+                <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Chef’s Word</h5>
+                <img src="../image/right-spoon.png" alt="" class="mb-2">
+                <h2 class="max-w-[523px] text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[175%] tracking-[.5px] mb-8">What we believe in</h2>
+                <img class="inline-flex" src="../image/quotation.png" alt="">
+                <p class="max-w-[570px] text-[#AAAAAA] text-base font-open-sans italic leading-[175%] tracking-[.6px] mb-8">  Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+                <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-2">Jack Biscoff</h4>
+                <p class="font-open-sans text-base text-[#AAAAAA] mb-8">Station Chef</p>
+                <img src="../image/signature.png" alt="">
+            </div>
+            <div class="chef4">
+                <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Chef’s Word</h5>
+                <img src="../image/right-spoon.png" alt="" class="mb-2">
+                <h2 class="max-w-[523px] text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[175%] tracking-[.5px] mb-8">What we believe in</h2>
+                <img class="inline-flex" src="../image/quotation.png" alt="">
+                <p class="max-w-[570px] text-[#AAAAAA] text-base font-open-sans italic leading-[175%] tracking-[.6px] mb-8">  Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+                <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-2">Stacy Lee</h4>
+                <p class="font-open-sans text-base text-[#AAAAAA] mb-8">Station Chef</p>
+                <img src="../image/signature.png" alt="">
+            </div>
+            <div class="chef5">
+                <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Chef’s Word</h5>
+                <img src="../image/right-spoon.png" alt="" class="mb-2">
+                <h2 class="max-w-[523px] text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[175%] tracking-[.5px] mb-8">What we believe in</h2>
+                <img class="inline-flex" src="../image/quotation.png" alt="">
+                <p class="max-w-[570px] text-[#AAAAAA] text-base font-open-sans italic leading-[175%] tracking-[.6px] mb-8">  Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+                <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-2">Aren Goodman </h4>
+                <p class="font-open-sans text-base text-[#AAAAAA] mb-8">Junior Chef</p>
+                <img src="../image/signature.png" alt="">
+            </div>
+            <div class="chef6">
+                <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Chef’s Word</h5>
+                <img src="../image/right-spoon.png" alt="" class="mb-2">
+                <h2 class="max-w-[523px] text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[175%] tracking-[.5px] mb-8">What we believe in</h2>
+                <img class="inline-flex" src="../image/quotation.png" alt="">
+                <p class="max-w-[570px] text-[#AAAAAA] text-base font-open-sans italic leading-[175%] tracking-[.6px] mb-8">  Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.</p>
+                <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-2">Javier Dowsing</h4>
+                <p class="font-open-sans text-base text-[#AAAAAA] mb-8">Junior Chef</p>
+                <img src="../image/signature.png" alt="">
+            </div> -->
+        </div>
+                <!-- ------------------chef-text----------- -->
+        <img class="absolute bottom-[-83px] right-0" src="../image/round spoon logo.png" alt="">
+    </section>
+    <!-- ==================chef-part end====================== -->
+
+    <!-- ==================customer-part start================= -->
+    <section id="customer-part" class="max-w-[1300px] mt-[152px]  mx-auto flex flex-col items-center justify-center">
+        <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Testimony</h5>
+        <img class="mb-2" src="../image/right-spoon.png" alt="">
+        <h2 class="max-w-[465px] text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[130%] tracking-[.5px] mb-8">Happy customers</h2>
+        <div class="customer flex flex-col gap-y-16">
+                <!-- -----------customer-1st-row------- -->
+            <div class="customer-1st-row flex gap-x-8">
+                <!-- ---------1st customer----- -->
+                <div class="1st-customer flex  gap-x-8">
+                    <div class="customer-img relative z-[1]">
+                        <img class="absolute left-[160px] bottom-0 z-[2]" src="../image/quotation.png" alt="">
+                        <img class="w-[190px] h-[190px]" src="../image/customer-1.png" alt="">
+                    </div>
+                    <div class="customer-text max-w-[412px] py-[18px]">
+                        <p class="font-open-sans text-base italic text-[#AAAAAA] leading-[175%] tracking-[.5px] mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+                        <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-[2px]">Wade Warren</h4>
+                        <p class="font-open-sans text-base text-[#F5EFDB] leading-[175%] tracking-[.6px] mb-[2px]">Sommelier</p>
+                    </div>
+                </div>
+                
+                <!-- ---------2nd customer----- -->
+                <div class="2nd-customer flex  gap-x-8">
+                    <div class="customer-img relative z-[1]">
+                        <img class="absolute left-[160px] bottom-0 z-[2]" src="../image/quotation.png" alt="">
+                        <img class="w-[190px] h-[190px]" src="../image/customer-2.png" alt="">
+                    </div>
+                    <div class="customer-text max-w-[412px] py-[18px]">
+                        <p class="font-open-sans text-base italic text-[#AAAAAA] leading-[175%] tracking-[.5px] mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+                        <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-[2px]">Jane Cooper</h4>
+                        <p class="font-open-sans text-base text-[#F5EFDB] leading-[175%] tracking-[.6px] mb-[2px]">Chef</p>
+                    </div>
+                </div>
+            </div>
+                <!-- -----------customer-2nd-row------- -->
+            <div class="customer-1st-row flex gap-x-8">
+                <!-- ---------3rd customer----- -->
+                <div class="1st-customer flex  gap-x-8">
+                    <div class="customer-img relative z-[1]">
+                        <img class="absolute left-[160px] bottom-0 z-[2]" src="../image/quotation.png" alt="">
+                        <img class="w-[190px] h-[190px]" src="../image/customer-3.png" alt="">
+                    </div>
+                    <div class="customer-text max-w-[412px] py-[18px]">
+                        <p class="font-open-sans text-base italic text-[#AAAAAA] leading-[175%] tracking-[.5px] mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+                        <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-[2px]">Robert Fox</h4>
+                        <p class="font-open-sans text-base text-[#F5EFDB] leading-[175%] tracking-[.6px] mb-[2px]">Chef</p>
+                    </div>
+                </div>
+                
+                <!-- ---------4th customer----- -->
+                <div class="2nd-customer flex  gap-x-8">
+                    <div class="customer-img relative z-[1]">
+                        <img class="absolute left-[160px] bottom-0 z-[2]" src="../image/quotation.png" alt="">
+                        <img class="w-[190px] h-[190px]" src="../image/customer-4.png" alt="">
+                    </div>
+                    <div class="customer-text max-w-[412px] py-[18px]">
+                        <p class="font-open-sans text-base italic text-[#AAAAAA] leading-[175%] tracking-[.5px] mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+                        <h4 class="font-cormorant text-[32px] text-[#DCCA87] leading-[130%] tracking-[.6px] mb-[2px]">Brooklyn Simmons</h4>
+                        <p class="font-open-sans text-base text-[#F5EFDB] leading-[175%] tracking-[.6px] mb-[2px]">Caterer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================customer-part end=================== -->
+
+    <!-- ==================dining start=================== -->
+     <section id="dining-part" class="mt-[152px] relative after:absolute after:contents:[''] after:w-[100%] after:h-[100%] after:bg-[rgba(12,12,12,0.43)] after:left-0 after:top-0">
+        <img class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[2]" src="../image/play icon.png" alt="">
+        <img src="../image/dinning.png" alt="">
+        <img class="absolute left-[201px] bottom-[470px]" src="../image/round spoon logo.png" alt="">
+     </section>
+    <!-- ==================dining end=================== -->
+
+    <!-- ==================laurels-part start================= -->
+     <section id="laurels-part" class="px-[310px] py-32 z-[1] relative bg-[url('/image/footer-bg.png')] bg-no-repeat bg-center bg-cover after:absolute after:contents[''] after:w-[100%] after:h-[100%] after:left-0 after:top-0 after:bg-[#0c0c0c9a] after:z-[-1]">
+
+        <div class="content flex gap-x-[183px] items-center justify-center">
+            <!-- --------left------------ -->
+            <div class="left">
+                <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Awards & recognition</h5>
+                <img class="mb-2" src="../image/right-spoon.png" alt="">
+                <h2 class="text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[130%] tracking-[.5px] mb-[64px]">Happy customers</h2>
+                <div class="rows flex flex-col gap-y-16">
+                       <!-- -------1st row---------- -->
+                 <div class="row-one gap-x-8 flex">
+                    <div class="column-two flex items-center justify-center gap-x-8">
+                        <img class="w-[79px] h-[79px]" src="../image/laurels-icon-2.png" alt="">
+                        <div class="max-w-[190px]">
+                            <h5 class=" text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Bib Gourmond</h5>
+                            <p class="font-open-sans text-base italic text-[#AAAAAA] leading-[175%] tracking-[.5px]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="column-one flex items-center justify-center gap-x-8">
+                        <img class="w-[79px] h-[79px]" src="../image/laurels-icon-1.png" alt="">
+                        <div class="max-w-[190px]">
+                            <h5 class=" text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Rising Star</h5>
+                            <p class="font-open-sans text-base italic text-[#AAAAAA] leading-[175%] tracking-[.5px]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- -------1st row---------- -->
+                <!-- -------2nd row---------- -->
+                <div class="row-two gap-x-8 flex">
+                    <div class="column-four flex items-center justify-center gap-x-8">
+                        <img class="w-[79px] h-[69px]" src="../image/laurels-icon-3.png" alt="">
+                        <div class="max-w-[190px]">
+                            <h5 class=" text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">AA Hospitality </h5>
+                            <p class="font-open-sans text-base italic text-[#AAAAAA] leading-[175%] tracking-[.5px]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="column-three flex items-center justify-center gap-x-8">
+                        <img class="w-[79px] h-[79px]" src="../image/laurels-icon-4.png" alt="">
+                        <div class="max-w-[190px]">
+                            <h5 class=" text-[#DCCA87] font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Outstanding Chef</h5>
+                            <p class="font-open-sans text-base italic text-[#AAAAAA] leading-[175%] tracking-[.5px]">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- -------2nd row---------- -->
+                </div>
+            </div>
+
+            <!-- --------right------------ -->
+            <div class="right relative">
+                <img class="absolute bottom-0 left-[-72px] z-[100]" src="../image/white G.png" alt="">
+                <div class="laurels-slider w-[483px] h-[691px]">
+                    <img src="../image/Laurels-1.png" alt="">
+                    <img src="../image/Laurels-2.png" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- ==================laurels-part end=================== -->
+
+    <!-- ==================blogs start=================== -->
+     <section id="blogs-part" class="mt-[152px] px-[310px] flex flex-col items-center justify-center relative">
+        <img src="../image/round spoon logo.png" alt="" class="absolute right-[72px] bottom-[-36px]">
+        <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Blogs</h5>
+        <img class="mb-2" src="../image/right-spoon.png" alt="">
+        <h2 class="max-w-[465px] text-[#DCCA87] font-semibold font-cormorant capitalize text-[64px] leading-[130%] tracking-[.5px] mb-8">Gerícht updates</h2>
+        <!-- --------blog-img---------- -->
+         <div class="blogs flex gap-x-8 mb-16">
+            <div class="blog-1">
+                <img class="w-full" src="../image/blog-1.png" alt="">
+                <div class="mt-6 flex justify-between">
+                    <p class="font-open-sans text-base text-[#FAFAFA] leading-[175%] tracking-[.6px]">16 Apr 2021</p>
+                    <p class="font-open-sans text-base text-[#FAFAFA] leading-[175%] tracking-[.6px]">- &nbsp; Annalisa L</p>
+                </div>
+                <h2 class="my-8 underline text-[#DCCA87]  font-cormorant capitalize text-[32px] leading-[130%] tracking-[.5px] mb-8">tips for prepping and caring for your grill</h2>
+                <p class="font-open-sans text-base text-[#AAAAAA] leading-[175%] tracking-[.7px] mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                <a href="#" class="text-[#DCCA87]  font-cormorant font-bold capitalize text-base leading-[175%] tracking-[.8px]">Read More</a>
+            </div>
+            <div class="blog-2">
+                <img class="w-full" src="../image/blog-2.png" alt="">
+                <div class="mt-6 flex justify-between">
+                    <p class="font-open-sans text-base text-[#FAFAFA] leading-[175%] tracking-[.6px]">23 May 2021</p>
+                    <p class="font-open-sans text-base text-[#FAFAFA] leading-[175%] tracking-[.6px]">- &nbsp; John Micheal</p>
+                </div>
+                <h2 class="my-8 underline text-[#DCCA87]  font-cormorant capitalize text-[32px] leading-[130%] tracking-[.5px] mb-8">summer cocktails and mocktails</h2>
+                <p class="font-open-sans text-base text-[#AAAAAA] leading-[175%] tracking-[.7px] mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                <a href="#" class="text-[#DCCA87]  font-cormorant font-bold capitalize text-base leading-[175%] tracking-[.8px]">Read More</a>
+            </div>
+            <div class="blog-3">
+                <img class="w-full" src="../image/blog-3.png" alt="">
+                <div class="mt-6 flex justify-between">
+                    <p class="font-open-sans text-base text-[#FAFAFA] leading-[175%] tracking-[.6px]">06 Aug 2021</p>
+                    <p class="font-open-sans text-base text-[#FAFAFA] leading-[175%] tracking-[.6px]">- &nbsp; Fred W</p>
+                </div>
+                <h2 class="max-w-[465px] my-8 underline text-[#DCCA87]  font-cormorant capitalize text-[32px] leading-[130%] tracking-[.5px] mb-8">easy cooking for college students</h2>
+                <p class="font-open-sans text-base text-[#AAAAAA] leading-[175%] tracking-[.7px] mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                <a href="#" class="text-[#DCCA87]  font-cormorant font-bold capitalize text-base leading-[175%] tracking-[.8px]">Read More</a>
+            </div>
+         </div>
+         <button class="py-2 px-8 bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">View More</button>
+     </section>
+    <!-- ==================blogs end=================== -->
+
+    <!-- ==================instagram start=================== -->
+     <section id="instagram" class="mt-[152px] py-[129px] z-[1] pl-[310px] flex items-center gap-x-16 relative bg-[url('/image/photogallary-bg.png')] bg-no-repeat bg-center bg-cover after:absolute after:contents[''] after:w-[100%] after:h-[100%] after:left-0 after:top-0 after:bg-[#0c0c0c9a] after:z-[-1]">
+        <img src="../image/round spoon logo.png" alt="" class="absolute left-[106px] bottom-[-87px]">
+        <div class="left w-[491px]">
+            <h4 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[.6px] capitalize mb-2">Instagram</h4>
+            <img src="../image/right-spoon.png" alt="" class="mb-2">
+            <h2 class="text-[#DCCA87] font-bold font-cormorant capitalize text-[64px] leading-[130%] tracking-[.5px] mb-8">Photo Gallery</h2>
+            <p class="text-[#AAAAAA] text-base font-normal font-open-sans leading-[175%] tracking-[.5px] mb-8  max-w-[491px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+            <button class="px-8 py-2 bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">View More</button>
+        </div> 
+        <div class="right w-[1058px] flex overflow-hidden instagram-slider">
+            <a href="#" class="mr-8 relative group">
+                <img class="max-w-[301px]" src="../image/instagram-1.png" alt="">
+                <div class="absolute bg-[url('../image/instagram-icon.png')] bg-no-repeat bg-center inset-0 bg-[#0C0C0C] opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
+            </a>
+            <a href="#" class="mr-8 relative group">
+                <img class="max-w-[301px]" src="../image/instagram2.png" alt="">
+                <div class="absolute bg-[url('../image/instagram-icon.png')] bg-no-repeat bg-center inset-0 bg-[#0C0C0C] opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
+            </a>
+            <a href="#" class="mr-8 relative group">
+                <img class="max-w-[301px]" src="../image/instagram3.png" alt="">
+                <div class="absolute bg-[url('../image/instagram-icon.png')] bg-no-repeat bg-center inset-0 bg-[#0C0C0C]  opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
+            </a>
+            <a href="#" class="mr-8 relative group">
+                <img class="max-w-[301px]" src="../image/instagram4.png" alt="">
+                <div class="absolute bg-[url('../image/instagram-icon.png')] bg-no-repeat bg-center inset-0 bg-[#0C0C0C]  opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
+            </a>
+            <a href="#" class="mr-8 relative group">
+                <img class="max-w-[301px]" src="../image/instagram5.png" alt="">
+                <div class="absolute bg-[url('../image/instagram-icon.png')] bg-no-repeat bg-center inset-0 bg-[#0C0C0C]  opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
+            </a>
+        </div>
+        
+     </section>
+    <!-- ==================instagram end=================== -->
+ </main>
+
+ <!-- ===============footer start========== -->
+<footer id="footer" class="mt-[152px] flex-col flex items-center justify-center relative z-[1] bg-[url('/image/footer-bg.png')] bg-no-repeat bg-center bg-cover after:absolute after:contents[''] after:w-[100%] after:h-[100%] after:left-0 after:top-0 after:bg-[rgba(12,12,12,0.65)] after:z-[-1]">
+    <!-- ---upper part-------- -->
+    <div class="flex items-center justify-center flex-col w-[1300px] py-16 bg-[#0C0C0C] border border-[rgba(220,202,135,0.12)] mb-48">
+        <h5 class="text-white font-cormorant font-bold text-2xl leading-[130%] tracking-[1px] capitalize mb-2">Newsletter</h5>
+        <img class="mb-2" src="../image/right-spoon.png" alt="">
+        <h2 class="text-[#DCCA87] font-cormorant capitalize text-[64px] leading-[130%] tracking-[.8px] mb-6">Subscribe to Our Newsletter</h2>
+        <p class="text-white font-open-sans text-base leading-[175%] tracking-[.5px] mb-16">And never miss latest Updates!</p>
+        <div class="max-w-[796px] flex items-center justify-center">
+            <input class="w-[635px] py-4 pl-[18px] text-base font-cormorant text-white font-semibold leading-[175%] tracking-[.6px] bg-transparent border border-[#f5efdb52] outline-none placeholder:text-base placeholder:font-cormorant placeholder:text-[#AAAAAA] placeholder:font-semibold placeholder:leading-[175%] placeholder:tracking-[.6px]" type="email" placeholder="Email Address">
+            <button class="py-2 px-8 ml-8 my-4 bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">Subscribe</button>
+        </div>
+    </div>
+
+    <!-- ---bottom part-------- -->
+     <div class="bottom-part flex items-center justify-center">
+        <div class="flex items-center justify-center flex-col mr-[125px]">
+            <h5 class="text-[#F5EFDB] font-cormorant text-[32px] leading-[130%] tracking-[.6px] capitalize mb-6">Contact Us</h5>
+            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.5px] mb-2">9 W 53rd St, New York, NY 10019, USA</p>
+            <a href="tel" class="">
+                <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.5px] mb-2">+1 212-344-1230</p>
+            </a>
+            <a href="tel" class="">
+                <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.5px] mb-2">+1 212-555-1230</p>
+            </a>
+        </div>
+        <!-- -------------- -->
+        <div class="flex items-center justify-center flex-col mr-[229px]">
+            <img src="../image/footer-logo.png" alt="">
+            <p class="max-w-[438px] text-center mt-8 text-white font-open-sans text-base leading-[175%] tracking-[1px] mb-2">"The best way to find yourself is to lose yourself in the service of others.”</p>
+            <img src="../image/right-spoon.png" alt="">
+            <div class="mt-[18px] mb-[66px] icon flex items-center justify-center gap-x-6">
+                <a href="#"><i class="fa-brands fa-facebook-f text-[#F5EFDB] text-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-[#F5EFDB] text-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-[#F5EFDB] text-2xl"></i></a>
+            </div>
+        </div>
+        <!-- ----------------- -->
+        <div class="flex items-center justify-center flex-col">
+            <h5 class="text-[#F5EFDB] font-cormorant text-[32px] leading-[130%] tracking-[.6px] capitalize mb-6">Working Hours</h5>
+            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.5px]">Monday-Friday:</p>
+            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.5px] mb-2">08:00 am -12:00 am</p>
+            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.5px]">Saturday-Sunday:</p>
+            <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.5px]">07:00am -11:00 pm</p>
+        </div>
+        <!-- --------------- -->
+     </div>
+     <p class="text-center text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[1px] mb-36 py-4">2021 Gerícht. All Rights reserved.</p>
+     <div class="1st-part absolute right-[120px] top-[420px] flex items-center flex-col gap-y-2">
+         <img class="" src="../image/scroll Vector.png" alt="">
+         <div class="text-[#DCCA87] font-bold uppercase text-base leading-[175%] tracking-[.6px]">Top</div>
+    </div>
+</footer>
+ <!-- ===============footer end ========== -->
+
+
+
+
+
+ <script src="../src/js/jquery-1.12.4.min.js"></script>
+ <script src="../src/js/slick.min.js"></script>
+ <script src="../src/js/script.js"></script>
+</body>
+</html>
+

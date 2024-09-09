@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <section id="comments" class="bg-[#0C0C0C] w-full h-auto min-h-[100vh]">
+        <div class="pt-4 pl-[484px] pr-[675px] ">
+            <textarea placeholder="Hi there! I love your blog...." class="w-[635px] pb-24 pt-4 pl-[18px] text-[#AAAAAA] bg-transparent outline-none border border-[#F5EFDB] placeholder:text-[#AAAAAA] font-semibold font-cormorant text-base leading-[175%] tracking-[.6px] resize-none overflow-hidden block"></textarea>
+            <button class="mt-4 px-8 py-2 bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">Submit</button>
+        </div>
+
+
+        <!-- ====================post a comment============== -->
+         <div class="mt-[152px] pl-[310px] pr-[975px]">
+            <h4 class="text-[#DCCA87] font-cormorant  text-[32px] leading-[130%] tracking-[.6px] capitalize">Post a Comment</h4>
+            <textarea placeholder="Hi there! I love your blog...." class="mt-10 mb-12 w-[635px] pb-24 pt-4 pl-[18px] text-[#AAAAAA] bg-transparent outline-none border border-[#F5EFDB] placeholder:text-[#AAAAAA] font-semibold font-cormorant text-base leading-[175%] tracking-[.6px] resize-none overflow-hidden block"></textarea>
+            <div class="flex w-[635px]">
+                <input type="text" placeholder="First Name" class="block w-1/2 py-4 pl-[18px] text-[#AAAAAA] bg-transparent outline-none border border-[#F5EFDB] placeholder:text-[#AAAAAA] font-semibold font-cormorant text-base leading-[175%] tracking-[.6px] mr-8">
+                <input type="text" placeholder="Last Name" class="w-1/2 py-4 pl-[18px] text-[#AAAAAA] bg-transparent outline-none border border-[#F5EFDB] placeholder:text-[#AAAAAA] font-semibold font-cormorant text-base leading-[175%] tracking-[.6px]">
+            </div>
+            <div class="row w-[635px] flex items-center gap-2 mt-[51px] mb-[55px]">
+                <label class="relative w-[20px] h-[20px]">
+                    <input id="check" type="checkbox" class="w-full h-full absolute opacity-0"> 
+                    <span class="check-mark block w-full h-full absolute border-2 cursor-pointer rounded-[1px] border-[#DCCA87] after:absolute after:contents[''] after:right-[4px] after:bottom-[4px] after:border-b-[3px] after:border-r-[3px] after:border-[#DCCA87] after:rotate-45 after:opacity-0"></span> 
+                </label>
+                <p class="text-[#AAAAAA] font-open-sans text-base leading-[175%] tracking-[.6px]">Save my name and email in this browser for the next time I comment.</p> 
+            </div>
+            <button class="mt-4 px-8 py-2 bg-[#DCCA87] text-[#0C0C0C] font-cormorant font-bold text-base leading-[175%] tracking-[.6px] border border-[#DCCA87] cursor-pointer hover:bg-transparent hover:border-[#DCCA87] hover:text-[#DCCA87] hover:shadow-md hover:shadow-slate-400 duration-500 transition-all">Submit</button>
+         </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+.texto {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: scale(-1, -1)
+}
+
+.hide{
+    visibility: hidden;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+#pSelectImg{
+    transition: all .3s linear;
+}
+#pList{
+    transition: all .2s linear;
+}
+#dSelectImg{
+    transition: all .3s linear;
+}
+#dList{
+    transition: all .2s linear;
+}
+#tSelectImg{
+    transition: all .3s linear;
+}
+#tList{
+    transition: all .2s linear;
+}
+#check:checked ~ .check-mark::after{
+    width: 8px;
+    height: 12px;
+    opacity: 1;
+}
